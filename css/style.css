@@ -3,11 +3,12 @@
 }
 
 nav{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     height: 90px;
     display: flex;
     align-items: center;   
+    background-color: #b12e06;
 }
 
 nav img{
@@ -31,13 +32,13 @@ nav ul li a{
     text-decoration: none;
     font-size: 20px;
     font-family: "RNS Sanz", Sans-serif;
-    font-weight: 800;
+    font-weight: 700;
     text-transform: uppercase;
-    color: black;
+    color: white;
 }
 
 header div{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     overflow: hidden;
 }
 
@@ -48,9 +49,8 @@ header div{
 }
 
 #index_main{
-    margin: auto;
-    width: 80%;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 
 h2{

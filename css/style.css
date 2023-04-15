@@ -58,7 +58,7 @@ header div{
     flex-direction: column;
 }
 
-h2{
+#h2_heading{
     font-family: "RNS Sanz", Sans-serif;
     font-weight: 800;
     font-size: 3rem;
@@ -68,13 +68,13 @@ h2{
 
 }
 
-p{
+#title_para{
     font-size: 24px;
     width: 80%;
     font-family: "Baloo Da 2",Helvetica,"Segoe UI","Helvetica Neue",Arial,sans-serif;
     letter-spacing: 1px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin: 50px auto 50px auto;
+
 }
 
 .content{
@@ -86,19 +86,54 @@ p{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 80px auto 80px auto;
+
 }
 
-
-#spices_image{
+.div_spices{
     width: 100%;
     height: 500px;
     max-width: 500px;
     border: 8px solid #fff;
     box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
     border-radius: 10px;
-    /* margin: 30px; */
+    overflow: hidden;
+}
+
+#spices_image{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    transition: transform 1s;
+}
+
+#spices_image:hover{
+    transform: scale(1.3);
 }
 
 .spices_info{
     margin: 40px;
+}
+
+h2{
+    font-family: "RNS Sanz", Sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+    color: #b12e06;
+    letter-spacing: 2px;
+}
+
+.content2{
+    width: 80%;
+    margin: auto;
+}
+
+.regions{
+    /* margin-top: 40px; */
+    width: 80%;
+    margin: 80px auto 80px auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
 }

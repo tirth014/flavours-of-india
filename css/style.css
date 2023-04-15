@@ -50,11 +50,42 @@ header div{
 
 #index_main{
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: center;    
+    flex-direction: column;
 }
 
 h2{
     font-family: "RNS Sanz", Sans-serif;
     font-weight: 800;
     font-size: 3rem;
+    color: #b12e06;
+}
+
+p{
+    font-size: 24px;
+    width: 80%;
+}
+
+.content{
+    width: 80%;
+    
+}
+
+.spices{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+#spices_image{
+    width: 100%;
+    height: 500px;
+    max-width: 500px;
+    object-fit: cover;
+    border: 8px solid #fff;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
+    border-radius: 10px;
+    margin: 30px;
 }

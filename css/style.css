@@ -1,5 +1,8 @@
 *{
     margin: 0px;
+    font-family: "Baloo Da 2",Helvetica,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    font-size: 24px;
+
 }
 
 nav{
@@ -60,16 +63,23 @@ h2{
     font-weight: 800;
     font-size: 3rem;
     color: #b12e06;
+    letter-spacing: 2px;
+    margin-top: 50px;
+
 }
 
 p{
     font-size: 24px;
     width: 80%;
+    font-family: "Baloo Da 2",Helvetica,"Segoe UI","Helvetica Neue",Arial,sans-serif;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .content{
     width: 80%;
-    
+    margin: auto;
 }
 
 .spices{
@@ -87,5 +97,9 @@ p{
     border: 8px solid #fff;
     box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
     border-radius: 10px;
-    margin: 30px;
+    /* margin: 30px; */
+}
+
+.spices_info{
+    margin: 40px;
 }

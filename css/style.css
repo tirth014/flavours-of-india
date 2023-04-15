@@ -137,3 +137,30 @@ h2{
     justify-content: space-between;
     align-items: center;
 }
+
+footer{
+    background-color: #b12e06;
+}
+#copyright {
+    font-family: serif;
+    font-style: italic;
+    font-size: medium;
+  }
+  #copyright {
+    text-align: center;
+  }
+  #copyright {
+    width: 100%;
+    clear: both;
+  }
+  footer > p{
+    color: white;
+  }
+  footer > div {
+    flex-grow: 1;
+    margin-bottom: 10px; 
+  }
+  nav > ul li:hover {
+    text-shadow: 2px 2px 10px white;
+  }
+ 

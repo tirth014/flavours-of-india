@@ -3,6 +3,7 @@
     font-family: 'Montserrat';
     font-size: 20px;
 }
+  
 
 nav{
     /* border: 1px solid red; */
@@ -241,6 +242,7 @@ hr{
     flex-direction: column;
     /* justify-content: space-evenly; */
     gap: 20px;
+    padding: 0px 0px 15px 0px;
 }
 .rec_info div{
     margin-left: 22px;
@@ -287,6 +289,7 @@ hr{
 #rec_font 
 {
     font-size: medium;
+    line-height: 1.4rem;
 }
 .rec_info h3{
     color: #b12e06;
@@ -307,4 +310,31 @@ hr{
 
 .links ul{
     margin: auto;
+}
+
+#india{
+    width: 100%;
+    height:500px;
+    object-fit: scale-down;
+}
+
+.india_border{
+    width: 100%;
+    height: 500px;
+    max-width: 800px;
+    /* border: 8px solid #fff;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
+    border-radius: 10px; */
+    overflow: hidden;
+}
+
+#read_more{
+    font-size: medium;
+    line-height: 1.4rem;
+    color: #b12e06;
+    list-style: none;
+}
+
+#read_more:hover{
+    cursor: pointer;
 }

@@ -460,6 +460,9 @@ hr{
         margin: auto;
         flex-wrap: wrap;
     }
+    .recipes {
+        width: 95%;
+    }
 
   }
   

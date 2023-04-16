@@ -231,10 +231,20 @@ hr{
   }
   
   .rec_info {
-    align-items: flex-end;
-    margin: 10px 0px 0px 20px;
+    /* align-items: flex-end; */
+    margin: 0px 0px 0px 20px;
     float: right;
-  }
+    border: 1px solid #fff;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, .2);
+    border-radius: 10px;  
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    gap: 20px;
+}
+.rec_info div{
+    margin-left: 22px;
+}
   
  
   
@@ -277,10 +287,15 @@ hr{
 {
     font-size: medium;
 }
-h3{
+.rec_info h3{
     color: #b12e06;
+    /* border:1px solid red; */
+    padding-top: 20px;
 }
-
+.card_info{
+    padding-left: 22px;
+    
+}
 #copyright{
     text-align: center;
     background-color: #b12e06;

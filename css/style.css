@@ -272,3 +272,14 @@ hr{
 h4{
     color: #b12e06;
 }
+
+#copyright{
+    text-align: center;
+    background-color: #b12e06;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.links ul{
+    margin: auto;
+}

@@ -141,8 +141,7 @@ h2{
     align-items: center;
 }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 footer{
     background-color: #b12e06;
 }
@@ -150,14 +149,11 @@ footer{
     font-family: serif;
     font-style: italic;
     font-size: medium;
-  }
-  #copyright {
     text-align: center;
-  }
-  #copyright {
     width: 100%;
     clear: both;
   }
+ 
   footer > p{
     color: white;
     background-color: #b12e06;
@@ -188,8 +184,8 @@ footer{
     height: 250px;
     object-fit: cover;
     
-    border: black;
-    border: 5px solid black;
+    /* border: black; */
+    /* border: 5px solid black; */
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -198,7 +194,7 @@ footer{
   .image-collage .row {
     display: flex;
     justify-content: center;
-    gap: 30px;
+  gap: 30px;
   }
 
   .image-zoom {
@@ -216,11 +212,6 @@ footer{
 }
 
 
-
-
-=======
-=======
->>>>>>> fca85497289c714bd50031910066eee04b6e21e3
 .breakfast{
     display: flex;
     justify-content: space-evenly;
@@ -384,7 +375,7 @@ hr{
 #copyright{
     text-align: center;
     background-color: #b12e06;
-    padding: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
     color: #fff;
 }

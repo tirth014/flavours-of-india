@@ -175,8 +175,9 @@ footer{
     transition: .3s;  }
   footer > ul{
     text-align: center;
+    
   }
-
+  
   .image-collage {
     display: flex;
     flex-wrap: wrap;

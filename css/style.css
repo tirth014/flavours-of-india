@@ -59,7 +59,7 @@ main{
 
 }
 
-#index_main{
+.index_main{
     display: flex;
     align-items: center;
     justify-content: center;    
@@ -67,7 +67,7 @@ main{
     padding: 20px
 }
 
-#h2_heading{
+.h2_heading{
     font-family: "RNS Sanz", Sans-serif;
     font-weight: 800;
     font-size: 3rem;
@@ -109,14 +109,14 @@ main{
     overflow: hidden;
 }
 
-#spices_image{
+.spices_image{
     width: 100%;
     height: 500px;
     object-fit: cover;
     transition: transform 1s;
 }
 
-#spices_image:hover{
+.spices_image:hover{
     transform: scale(1.3);
 }
 

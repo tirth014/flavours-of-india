@@ -149,7 +149,6 @@ h2{
     align-items: center;
 }
 
-
 footer{
     background-color: #b12e06;
     padding: 15px 0px;
@@ -358,19 +357,19 @@ hr{
     align-items: center;
   }
   
-  #small {
+  .small {
     margin: 9px;
     width: calc(100% / 4);
     height: 60px;
     width: 60px;
   }
 
-#rec_font li
+.rec_font li
 {
     font-size: medium;
 }
 
-#rec_font 
+.rec_font 
 {
     font-size: medium;
     line-height: 1.4rem;

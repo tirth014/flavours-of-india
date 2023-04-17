@@ -3,14 +3,16 @@
     font-family: 'Montserrat';
     font-size: 20px;
 }
+  
 
 nav{
     /* border: 1px solid red; */
     width: 100%;
-    height: 90px;
+    /* height: 90px; */
     display: flex;
     align-items: center;   
     background-color: #b12e06;
+    padding:20px 0px 20px 0px;
 }
 
 nav img{
@@ -51,11 +53,18 @@ header div{
     object-fit: cover;
 }
 
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+
 #index_main{
     display: flex;
     align-items: center;
     justify-content: center;    
     flex-direction: column;
+    padding: 20px
 }
 
 #h2_heading{
@@ -64,30 +73,30 @@ header div{
     font-size: 3rem;
     color: #b12e06;
     letter-spacing: 2px;
-    margin-top: 50px;
-
+    /* margin-top: 50px; */
+    padding-bottom: 0px;
 }
 
 #title_para{
     font-size: 24px;
     width: 80%;
-    /* font-family: "Baloo Da 2",Helvetica,"Segoe UI","Helvetica Neue",Arial,sans-serif; */
     letter-spacing: 1px;
-    margin: 50px auto 50px auto;
+    margin: 40px auto 0px auto;
 
 }
 
 .content{
     width: 80%;
     margin: auto;
+    padding: 20px;
 }
 
 .spices{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 80px auto 80px auto;
-
+    margin: 0px auto 0px auto;
+    /* flex-wrap: wrap; */
 }
 
 .div_spices{
@@ -133,7 +142,7 @@ h2{
 .regions{
     /* margin-top: 40px; */
     width: 80%;
-    margin: 80px auto 80px auto;
+    margin: 0px auto 20px auto;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -142,19 +151,17 @@ h2{
 
 footer{
     background-color: #b12e06;
+    padding: 15px 0px;
 }
 #copyright {
     font-family: serif;
     font-style: italic;
     font-size: medium;
-  }
-  #copyright {
     text-align: center;
-  }
-  #copyright {
     width: 100%;
     clear: both;
   }
+ 
   footer > p{
     color: white;
     background-color: #b12e06;
@@ -163,9 +170,9 @@ footer{
     flex-grow: 1;
      
   }
-  nav > ul li:hover {
-    text-shadow: 2px 2px 10px white;
-  }
+  nav > ul li a:hover {
+    color: black  ;
+    transition: .3s;  }
   footer > ul{
     text-align: center;
   }
@@ -185,8 +192,8 @@ footer{
     height: 250px;
     object-fit: cover;
     
-    border: black;
-    border: 5px solid black;
+    /* border: black; */
+    /* border: 5px solid black; */
     margin-left: 5px;
     margin-right: 5px;
   }
@@ -195,7 +202,8 @@ footer{
   .image-collage .row {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
   }
 
   .image-zoom {
@@ -212,12 +220,13 @@ footer{
     
 }
 
-
 .breakfast{
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
     align-items: center;
+    flex-wrap: wrap;
+
     /* margin: 80px auto 80px auto; */
 }
 
@@ -315,6 +324,7 @@ hr{
     flex-direction: column;
     /* justify-content: space-evenly; */
     gap: 20px;
+    padding: 0px 0px 15px 0px;
 }
 .rec_info div{
     margin-left: 22px;
@@ -325,7 +335,8 @@ hr{
   
   .roww{
     display: flex;
-    margin: 50px;
+    margin: 0px auto;
+    padding: 20px;
   }
   
   
@@ -361,6 +372,7 @@ hr{
 #rec_font 
 {
     font-size: medium;
+    line-height: 1.4rem;
 }
 .rec_info h3{
     color: #b12e06;
@@ -374,11 +386,109 @@ hr{
 #copyright{
     text-align: center;
     background-color: #b12e06;
-    padding: 10px;
+    padding-bottom: 10px;
     font-size: 14px;
     color: #fff;
 }
 
 .links ul{
     margin: auto;
+}
+
+#india{
+    width: 100%;
+    height:500px;
+    object-fit: contain;
+}
+
+.india_border{
+    width: 100%;
+    height: 500px;
+    max-width: 800px;
+    /* border: 8px solid #fff;
+    box-shadow: 0 4px 16px 0 rgba(0,0,0,.2);
+    border-radius: 10px; */
+    overflow: hidden;
+}
+
+#read_more{
+    font-size: medium;
+    line-height: 1.4rem;
+    color: #b12e06;
+    list-style: none;
+}
+
+#read_more:hover{
+    cursor: pointer;
+}
+
+
+/* Mobile view */
+@media screen and (max-width: 1024px){
+    .roww {
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .recipe{
+        margin: auto;
+    }
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav img{
+        width: 120px;
+        margin-left: 0px;
+        margin-top: 8px;
+    }
+
+    .categories_header h3{
+        text-align: center;
+    }
+
+    nav ul{
+        margin: auto;
+    }
+
+    .div_spices{
+        margin: auto;
+    }
+    .spices{
+        margin: auto;
+        flex-wrap: wrap;
+    }
+    .recipes {
+        width: 95%;
+    }
+
+  }
+  
+  .ul_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    width: 87%;
+    margin: auto;
+    padding: 20px;
+    padding-bottom: 40px;
+  }
+  
+ .li_gallery {
+    height: 40vh;
+    flex-grow: 1;
+    list-style: none;
+  }
+  
+  .imgs_gallery {
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+    transition: transform .5s;
+  }
+
+  .imgs_gallery:hover{
+    transform: scale(1.1);
 }

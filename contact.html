@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/contact.js"></script>
+</head>
+<body>
+    <nav>
+        <div>
+            <a href="index.html"><img alt="image" src="images/a3.png"></a>
+        </div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+
+        </ul>
+    </nav>
+    <header>
+        <div>
+            <img alt="image" src="images/header4.jpg" id="header_img">
+        </div>
+    </header>
+    <main>
+        <div class="index_main">
+            <h2 id="h2_heading">Contact Us</h2>
+        </div>
+        <section class="contact_section">
+            <div class="wrapper">
+                <div class="form-input">
+                <form id="form" method="get">
+                    <div class="input-group">
+                        <!-- <label for="fname">First Name: </label> -->
+                        <input type="text" id="name" name="name" placeholder="Name" class="input-box" onblur="namev()">
+                    </div>
+                    <div class="input-group">
+                        <label id="name_error"></label>
+                    </div>
+                    <div class="input-group">
+                        <!-- <label for="e-mail">E-mail:</label> -->
+                        <input type="email" id="e-mail" name="e-mail" placeholder="E-mail" class="input-box" onblur = "emailv()">
+                    </div>
+                    <div class="input-group">
+                        <label id="email_error"></label>
+                    </div>
+                    <div class="input-group">
+                        <!-- <label for="phone">Phone:</label> -->
+                        <input type="tel" id="tel" name="tel" placeholder="Phone Number" class="input-box" onblur="phonev()">
+                    </div>
+                    <div class="input-group">
+                        <label id="phone_error"></label>
+                    </div>
+                    <div class="input-group">
+                        <!-- <label for="message">Message:</label> -->
+                        <textarea id="message" name="message" rows="10" placeholder="Message" class="input-box" onkeyup="remainingWords()" maxlength="50"></textarea>
+                        <br><label id="remaining_words"></label>
+                        <label id="message_error"></label>
+                    </div>
+                        <input type="button" id="submit" value="Send" class="input-submit"> 
+                </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>  
+        <div class="links">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    
+                    <li><a href="categories.html">Categories</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="recipes.html">Recipes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <p id="copyright">Copyright
+            &copy; FLAVOURS OF INDIA
+        </p>
+    </footer>
+</body>
+</html>

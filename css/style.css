@@ -504,7 +504,7 @@ hr{
 .contact_section{
     display: flex;
     justify-content: center;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 
 .form-input{
@@ -569,3 +569,29 @@ hr{
 .nav-link[aria-current="page"]{
     color: black;
 }
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    /* color: #0087ca; */
+  }
+  
+  .hover-underline-animation::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    bottom: -3px;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  
+  .hover-underline-animation:hover::after {
+    width: 100%; 
+  left: 0; 
+  }

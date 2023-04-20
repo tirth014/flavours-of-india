@@ -3,8 +3,6 @@
 
 const $ = selector => document.querySelector(selector);
 
-let a = 0;
-
 function remainingWords()
 {
     let message = $("#message").value;

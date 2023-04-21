@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     currentLink();
     displayCurrentTime();
-    let let timer = setInterval( displayCurrentTime, 1000 );
+    let timer = setInterval( displayCurrentTime, 1000 );
 });
 document.addEventListener("DOMContentLoaded", function() {
   // const readMoreBtn = document.querySelector('.read');

@@ -47,5 +47,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     currentLink();
     displayCurrentTime();
-    timer = setInterval( displayCurrentTime, 1000 );
+    let timer = setInterval( displayCurrentTime, 1000 );
 });

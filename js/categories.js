@@ -67,6 +67,15 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     currentLink();
     displayCurrentTime();
-    timer = setInterval( displayCurrentTime, 1000 );
+    let timer = setInterval( displayCurrentTime, 1000 );
    
+    $("#nextBtn").addEventListener("click", () =>
+    {
+        $(".breakfast").scrollLeft += 300;
+    })
+
+    $("#backBtn").addEventListener("click", () =>
+    {
+        $(".breakfast").scrollLeft -= 300;
+    })
 });

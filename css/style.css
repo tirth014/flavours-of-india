@@ -226,11 +226,13 @@ footer{
 
 .breakfast{
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     gap: 20px;
     
+    overflow-x: scroll;
+    padding: 20px;
     flex-wrap: nowrap;
-
+    scroll-behavior: smooth;
     /* margin: 80px auto 80px auto; */
 }
 
@@ -636,6 +638,7 @@ hr{
     background-color: rgba(0, 0, 0, .5);
   }
   
+  
   .time{
     display: flex;
     justify-content: flex-end;
@@ -667,4 +670,41 @@ hr{
     transition: all .2s linear;
     outline: 0;
     width: 500px;
+  }
+
+
+
+  .gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    flex: none;
+  }
+
+  .gallery div img{
+    width: 100%;
+  }
+
+  .gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+  }
+
+  #backBtn , #nextBtn{
+    cursor: pointer;
+  }
+
+  .card{
+    flex-wrap: nowrap;
+    flex: none;
+    
   }

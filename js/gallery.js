@@ -51,7 +51,7 @@ function search() {
       const searchTerm = searchInput.value.toLowerCase();
 
       galleryItems.forEach(function(item) {
-        const imgAlt = item.querySelector('img').getAttribute('src').toLowerCase();
+        const imgAlt = item.querySelector('a').getAttribute('data-title').toLowerCase();
 
         if (imgAlt.includes(searchTerm)) {
           item.style.display = 'block';

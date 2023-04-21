@@ -58,8 +58,8 @@ function search() {
           item.style.width = '100%';
           item.style.height = '400px';
           item.style.objectFit = 'cover';
-          console.log(item.parentNode);
-            item.parentNode.style.width = '400px';
+        //   console.log(item.parentNode);
+        item.parentNode.style.width = '400px';
             // item.childNodes[1].style.width = '400px';
             // item.childNodes[1].style.minWidth = '0';
         } else {

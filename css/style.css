@@ -569,3 +569,7 @@ hr{
 .nav-link[aria-current="page"]{
     color: black;
 }
+.more
+{
+    display: none;
+}

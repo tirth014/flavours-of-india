@@ -26,9 +26,16 @@
       </div>
     </header>
     <main>
+
       <div class="index_main">
         <h2 id="h2_heading">Gallery</h2>
       </div>
+      <div class="container-fluid">
+        <div class="container">
+        <div class="search">
+        <h1>Images</h1>
+        
+        </div>
       <!-- <div class="image-collage">
         <div class="row">
           <div class="image-zoom">
@@ -118,55 +125,80 @@
           </div>
         </div>
       </div> -->
-
+      <input type="text" id="search-input" placeholder="Search images...">
+      <button id="searchBtn">Search</button>
       <ul class="ul_gallery">
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/alooparatha.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/alooparatha.jpg" alt="alooparatha">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/dal-makhani.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/dal-makhani.jpg" alt="dal-makhani">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/dosa.jpeg" alt="Image 14">
+          <img class="imgs_gallery" src="images/dosa.jpeg" alt="dosa">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/idli.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/idli.jpg" alt="idli">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/meduvada.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/meduvada.jpg" alt="meduvada">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/paneerbuttermasala.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/paneerbuttermasala.jpg" alt="paneerbuttermasala">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/bhel.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/bhel.jpg" alt="bhel">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/chaat.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/chaat.jpg" alt="chaat">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/chole.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/chole.jpg" alt="chole">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/jalebi.jpeg" alt="Image 14">
+          <img class="imgs_gallery" src="images/jalebi.jpeg" alt="jalebi">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/khaman.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/khaman.jpg" alt="khaman">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/matar-paneer.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/matar-paneer.jpg" alt="matar-paneer">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/pani-puri.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/pani-puri.jpg" alt="pani-puri">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/Uttapam.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/Uttapam.jpg" alt="Uttapam">
         </li>
         <li class="li_gallery">
-          <img class="imgs_gallery" src="images/vadapav.jpg" alt="Image 14">
+          <img class="imgs_gallery" src="images/vadapav.jpg" alt="vadapav">
         </li>
       </ul>
-
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          let searchBtn = document.getElementById('searchBtn');
+          searchBtn.addEventListener('click', search);
+        });
+    
+        function search() {
+          const searchInput = document.getElementById('search-input');
+          const galleryItems = document.querySelectorAll('.li_gallery');
+    
+          searchInput.addEventListener('keyup', function() {
+            const searchTerm = searchInput.value.toLowerCase();
+    
+            galleryItems.forEach(function(item) {
+              const imgAlt = item.querySelector('img').getAttribute('alt').toLowerCase();
+    
+              if (imgAlt.includes(searchTerm)) {
+                item.style.display = 'block';
+              } else {
+                item.style.display = 'none';
+              }
+            });
+          });
+        }
+      </script>
     </main>
 
     <footer>

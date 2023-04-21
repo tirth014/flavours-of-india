@@ -13,6 +13,8 @@ function currentLink(){
     })
 }
 
+
+
 function openModal(categories_name, modal_id, close_btn)
 {
     const openBtn = $(categories_name);
@@ -38,4 +40,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
 
     currentLink();
     
+   
 });

@@ -228,8 +228,8 @@ footer{
     display: flex;
     justify-content: space-evenly;
     gap: 20px;
-    align-items: center;
-    flex-wrap: wrap;
+    
+    flex-wrap: nowrap;
 
     /* margin: 80px auto 80px auto; */
 }
@@ -606,10 +606,18 @@ hr{
   .modal{
     width: 60%;
     margin: auto;
+    border-radius: 20px;
+    /* border: 0px; */
+    padding: 25px;
 }
 
 .modal-body{
     margin-top: 20px;
+}
+
+.close-btn{
+    transform: scale(2);
+
 }
 
 .close-btn:hover{
@@ -623,3 +631,4 @@ hr{
   .modal::backdrop{
     background-color: rgba(0, 0, 0, .5);
   }
+  

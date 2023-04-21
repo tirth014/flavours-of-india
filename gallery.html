@@ -1,227 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" >
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css" >
-    <script src="js/gallery.js"></script>
-  </head>
-  <body>
-    <nav>
-      <div>
-        <a href="index.html"><img src="images/a3.png" alt="logo"></a>
-      </div>
-      <ul>
-        <li><a href="index.html" class="nav-link hover-underline-animation">Home</a></li>
-        <li><a href="categories.html" class="nav-link hover-underline-animation">Categories</a></li>
-        <li><a href="gallery.html" class="nav-link hover-underline-animation">Gallery</a></li>
-        <li><a href="recipes.html" class="nav-link hover-underline-animation">Recipes</a></li>
-        <li><a href="contact.html" class="nav-link hover-underline-animation">Contact Us</a></li>
 
-      </ul>
-    </nav>
-    <header>
-      <div>
-        <img src="images/header4.jpg" id="header_img" alt="header" >
-      </div>
-    </header>
-    <main>
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/gallery.js"></script>
+  <script src="js/lightbox-plus-jquery.js"></script>
+  <link rel="stylesheet" href="css/lightbox.css">
 
-      <div class="index_main">
-        <h2 id="h2_heading">Gallery</h2>
-      </div>
-      <div class="container-fluid">
-        <div class="container">
-        <div class="search">
-        <h1>Images</h1>
-        
-        </div>
-      <!-- <div class="image-collage">
-        <div class="row">
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/alooparatha.jpg" alt="Image 1"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/dal makhani.jpg" alt="Image 2"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/dosa.jpeg" alt="Image 3"
-            ></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/idli.jpg" alt="Image 4"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/meduvada.jpg" alt="Image 5"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/paneerbuttermasala.jpg" alt="Image 6"
-            ></a>
-          </div>
-          
-        </div>
-        <div class="row">
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/bhel.JPG" alt="Image 7"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/chaat.jpg" alt="Image 8"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/chole.jpg" alt="Image 9"
-            ></a>
-          </div>
-        </div>
-        <div class="row">
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/jalebi.jpeg" alt="Image 10"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/khaman.jpg" alt="Image 11"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/matar-paneer.jpg" alt="Image 12"
-            ></a>
-          </div>
-          
-        </div>
-        <div class="row">
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/pani-puri.jpg" alt="Image 13"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/Uttapam.jpg" alt="Image 14"
-            ></a>
-          </div>
-          <div class="image-zoom">
-            <a href="categories.html">
-              <img src="images/vadapav.jpg" alt="Image 15"
-            ></a>
-          </div>
-        </div>
-      </div> -->
-      <input type="text" id="search-input" placeholder="Search images...">
-      <button id="searchBtn">Search</button>
-      <ul class="ul_gallery">
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/alooparatha.jpg" alt="alooparatha">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/dal-makhani.jpg" alt="dal-makhani">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/dosa.jpeg" alt="dosa">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/idli.jpg" alt="idli">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/meduvada.jpg" alt="meduvada">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/paneerbuttermasala.jpg" alt="paneerbuttermasala">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/bhel.jpg" alt="bhel">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/chaat.jpg" alt="chaat">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/chole.jpg" alt="chole">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/jalebi.jpeg" alt="jalebi">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/khaman.jpg" alt="khaman">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/matar-paneer.jpg" alt="matar-paneer">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/pani-puri.jpg" alt="pani-puri">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/Uttapam.jpg" alt="Uttapam">
-        </li>
-        <li class="li_gallery">
-          <img class="imgs_gallery" src="images/vadapav.jpg" alt="vadapav">
-        </li>
-      </ul>
-      <script>
-        document.addEventListener('DOMContentLoaded', function() {
-          let searchBtn = document.getElementById('searchBtn');
-          searchBtn.addEventListener('click', search);
-        });
-    
-        function search() {
-          const searchInput = document.getElementById('search-input');
-          const galleryItems = document.querySelectorAll('.li_gallery');
-    
-          searchInput.addEventListener('keyup', function() {
-            const searchTerm = searchInput.value.toLowerCase();
-    
-            galleryItems.forEach(function(item) {
-              const imgAlt = item.querySelector('img').getAttribute('alt').toLowerCase();
-    
-              if (imgAlt.includes(searchTerm)) {
-                item.style.display = 'block';
-              } else {
-                item.style.display = 'none';
-              }
-            });
-          });
-        }
-      </script>
-    </main>
+</head>
 
-    <footer>
-      <div class="links">
-        <nav>
-          <ul class="ftr">
-            <li><a href="index.html">Home</a></li>
-
-            <li><a href="categories.html">Categories</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="recipes.html">Recipes</a></li>
-          </ul>
-        </nav>
-      </div>
-      <div class="time">
-        <p>
-            <span id="hours">&nbsp;</span>:
-            <span id="minutes">&nbsp;</span>:
-            <span id="seconds">&nbsp;</span>&nbsp;
-            <span id="ampm">&nbsp;</span>
-        </p>
+<body>
+  <nav>
+    <div>
+      <a href="index.html"><img src="images/a3.png" alt="logo"></a>
     </div>
-      <p id="copyright">Copyright &copy;FLAVOURS OF INDIA</p>
-    </footer>
-  </body>
+    <ul>
+      <li><a href="index.html" class="nav-link hover-underline-animation">Home</a></li>
+      <li><a href="categories.html" class="nav-link hover-underline-animation">Categories</a></li>
+      <li><a href="gallery.html" class="nav-link hover-underline-animation">Gallery</a></li>
+      <li><a href="recipes.html" class="nav-link hover-underline-animation">Recipes</a></li>
+      <li><a href="contact.html" class="nav-link hover-underline-animation">Contact Us</a></li>
+
+    </ul>
+  </nav>
+  <header>
+    <div>
+      <img src="images/header4.jpg" id="header_img" alt="header">
+    </div>
+  </header>
+  <main>
+
+    <div class="index_main">
+      <h2 id="h2_heading">Gallery</h2>
+    </div>
+    <div class="container-fluid">
+      <div class="container">
+        <input type="text" id="search-input" placeholder="Search images...">
+      </div>
+      <button id="searchBtn">Search</button>
+    </div>
+    <ul class="ul_gallery">
+      <li class="li_gallery">
+        <a href="images/alooparatha.jpg" data-lightbox="food" data-title="Aloo Paratha">
+          <img class="imgs_gallery" src="images/alooparatha.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/dal-makhani.jpg" data-lightbox="food" data-title="Dal Makhani">
+          <img class="imgs_gallery" src="images/dal-makhani.jpg" alt="Image 14">
+        </a>
+
+      </li>
+      <li class="li_gallery">
+        <a href="images/dosa.jpeg" data-lightbox="food" data-title="Dosa">
+          <img class="imgs_gallery" src="images/dosa.jpeg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/idli.jpg" data-lightbox="food" data-title="Idli">
+          <img class="imgs_gallery" src="images/idli.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/meduvada.jpg" data-lightbox="food" data-title="Meduvada">
+          <img class="imgs_gallery" src="images/meduvada.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/paneerbuttermasala.jpg" data-lightbox="food" data-title="Paneer Butter Masala">
+          <img class="imgs_gallery" src="images/paneerbuttermasala.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/bhel.JPG" data-lightbox="food" data-title="Bhel">
+          <img class="imgs_gallery" src="images/bhel.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/chaat.jpg" data-lightbox="food" data-title="Chaat">
+          <img class="imgs_gallery" src="images/chaat.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/chole.jpg" data-lightbox="food" data-title="Chole">
+          <img class="imgs_gallery" src="images/chole.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/jalebi.jpeg" data-lightbox="food" data-title="Jalebi">
+          <img class="imgs_gallery" src="images/jalebi.jpeg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/khaman.jpg" data-lightbox="food" data-title="Khaman">
+          <img class="imgs_gallery" src="images/khaman.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/matar-paneer.jpg" data-lightbox="food" data-title="Matar Paneer">
+          <img class="imgs_gallery" src="images/matar-paneer.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/pani-puri.jpg" data-lightbox="food" data-title="Pani Puri">
+          <img class="imgs_gallery" src="images/pani-puri.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/Uttapam.jpg" data-lightbox="food" data-title="Uttapam">
+          <img class="imgs_gallery" src="images/Uttapam.jpg" alt="Image 14">
+        </a>
+      </li>
+      <li class="li_gallery">
+        <a href="images/vadapav.jpg" data-lightbox="food" data-title="Vada Pav">
+          <img class="imgs_gallery" src="images/vadapav.jpg" alt="Image 14">
+        </a>
+      </li>
+    </ul>
+  </main>
+
+  <footer>
+    <div class="links">
+      <nav>
+        <ul class="ftr">
+          <li><a href="index.html">Home</a></li>
+
+          <li><a href="categories.html">Categories</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="time">
+      <p>
+        <span id="hours">&nbsp;</span>:
+        <span id="minutes">&nbsp;</span>:
+        <span id="seconds">&nbsp;</span>&nbsp;
+        <span id="ampm">&nbsp;</span>
+      </p>
+    </div>
+    <p id="copyright">Copyright &copy;FLAVOURS OF INDIA</p>
+  </footer>
+</body>
+
 </html>

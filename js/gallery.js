@@ -43,9 +43,38 @@ const displayCurrentTime = () => {
     $("#seconds").innerHTML = seconds;
 };
 
+function search() {
+    const searchInput = document.getElementById('search-input');
+    const galleryItems = document.querySelectorAll('.li_gallery');
+
+    searchInput.addEventListener('keyup', function() {
+      const searchTerm = searchInput.value.toLowerCase();
+
+      galleryItems.forEach(function(item) {
+        const imgAlt = item.querySelector('img').getAttribute('src').toLowerCase();
+
+        if (imgAlt.includes(searchTerm)) {
+          item.style.display = 'block';
+          item.style.width = '100%';
+          item.style.height = '400px';
+          item.style.objectFit = 'cover';
+          console.log(item.parentNode);
+            item.parentNode.style.width = '400px';
+            // item.childNodes[1].style.width = '400px';
+            // item.childNodes[1].style.minWidth = '0';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+}
+
 document.addEventListener("DOMContentLoaded", ()=>{
 
     currentLink();
     displayCurrentTime();
-    timer = setInterval( displayCurrentTime, 1000 );
+    let timer = setInterval( displayCurrentTime, 1000 );
+
+    let searchBtn = document.getElementById('searchBtn');
+    searchBtn.addEventListener('click', search);
 });

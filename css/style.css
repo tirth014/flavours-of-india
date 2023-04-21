@@ -632,3 +632,9 @@ hr{
     background-color: rgba(0, 0, 0, .5);
   }
   
+  .time{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 20px;
+    color: #fff;
+  }

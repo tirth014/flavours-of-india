@@ -654,9 +654,11 @@ hr{
   
   .time{
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     padding: 0px 20px;
     color: #fff;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
   .container-fluid{
@@ -720,4 +722,19 @@ hr{
     flex-wrap: nowrap;
     flex: none;
     
+  }
+
+  .read{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #b12e06;
+    border-radius: 10px;
+    color: white;
+    border: 0px;
+    padding: 10px;
+  }
+
+  div button:hover{
+    cursor: pointer;
   }

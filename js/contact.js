@@ -132,6 +132,7 @@ const displayCurrentTime = () => {
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
+    $("#name").focus();
     $("#submit").addEventListener("click", validate);
     remainingWords();
     displayCurrentTime();

@@ -70,21 +70,3 @@ document.addEventListener("DOMContentLoaded", ()=>{
     displayCurrentTime();
     let timer = setInterval( displayCurrentTime, 1000 );
 });
-document.addEventListener("DOMContentLoaded", function() {
-  // const readMoreBtn = document.querySelector('.read');
-  // const moreText = document.querySelector('.more');
-
-  // // add a click event listener to the button
-  // readMoreBtn.addEventListener('click', function() {
-  //   // if the additional text is hidden, show it and change the button text to "Read less"
-  //   if (moreText.style.display === 'none') {
-  //     moreText.style.display = 'inline';
-  //     readMoreBtn.textContent = 'Read less';
-  //   } 
-  //   // if the additional text is showing, hide it and change the button text to "Read more"
-  //   else {
-  //     moreText.style.display = 'none';
-  //     readMoreBtn.textContent = 'Read more';
-  //   }
-  // });
-});

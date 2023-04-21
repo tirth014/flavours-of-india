@@ -572,10 +572,23 @@ hr{
 .nav-link[aria-current="page"]{
     color: black;
 }
-.more
+.more1
 {
     display: none;
 }
+.more2
+{
+    display: none;
+}
+.more3
+{
+    display: none;
+}
+.more4
+{
+    display: none;
+}
+
 
 
 .hover-underline-animation {
